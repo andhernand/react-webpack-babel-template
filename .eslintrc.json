@@ -13,7 +13,10 @@
     "plugin:jsx-a11y/recommended",
     "plugin:jest/recommended"
   ],
-  "rules": {},
+  "rules": {
+    "quotes": [2, "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
+    "semi": [2, "always"]
+  },
   "settings": {
     "react": {
       "version": "16.8.6"
