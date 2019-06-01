@@ -78,5 +78,10 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'build'),
     hot: true
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'initial',
+    }
   }
 };
