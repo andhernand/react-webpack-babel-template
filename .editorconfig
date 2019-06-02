@@ -8,12 +8,12 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
+[*.{js,jsx}]
+quote_type = single
+
 [*.md]
 trim_trailing_whitespace = false
 
 [*.json]
 trim_trailing_whitespace = false
 insert_final_newline = false
-
-[*.js]
-quote_type = single
