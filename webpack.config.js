@@ -5,10 +5,10 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: ['@babel/polyfill', path.join(__dirname, 'src', 'index.js')],
+  entry: ['@babel/polyfill', path.resolve(__dirname, 'src', 'index.js')],
   output: {
-    path: path.join(__dirname, 'build'),
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, 'build'),
+    filename: '[name].[hash:9].js'
   },
   module: {
     rules: [
@@ -44,7 +44,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[path][name]-[hash:8].[ext]'
+              name: '[path][name]-[hash:9].[ext]'
             }
           }
         ]
@@ -65,23 +65,42 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.HashedModuleIdsPlugin(),
     new HtmlWebPackPlugin({
       filename: 'index.html',
-      template: path.join(__dirname, 'src', 'index.html'),
-      favicon: path.join(__dirname, 'assets', 'image', 'favicon.png')
+      template: path.resolve(__dirname, 'src', 'index.html'),
+      favicon: path.resolve(__dirname, 'assets', 'image', 'favicon.png')
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
-      chunkFilename: '[id].css'
+      chunkFilename: '[name].[hash:9].css'
     })
   ],
   devServer: {
-    contentBase: path.join(__dirname, 'build'),
+    contentBase: path.resolve(__dirname, 'build'),
     hot: true
   },
   optimization: {
+    runtimeChunk: 'single',
     splitChunks: {
-      chunks: 'initial',
+      chunks: 'all',
+      maxInitialRequests: Infinity,
+      minSize: 0,
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name(module) {
+            // get the name. E.g. node_modules/packageName/not/this/part.js
+            // or node_modules/packageName
+            const packageName = module.context.match(
+              /[\\/]node_modules[\\/](.*?)([\\/]|$)/
+            )[1];
+
+            // npm package names are URL-safe, but some servers don't like @ symbols
+            return `npm.${packageName.replace('@', '')}`;
+          }
+        }
+      }
     }
   }
 };
