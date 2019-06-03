@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css, ThemeProvider } from 'styled-components';
 import theme from 'styled-theming';
+import './App.scss';
 
 const white = '#fff';
 const black = '#000';
