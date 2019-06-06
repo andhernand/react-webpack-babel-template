@@ -22,6 +22,9 @@
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@testing-library/react": "^8.0.1",
@@ -29,7 +32,7 @@
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
-    "es-components": "^19.0.48",
+    "es-components": "^19.0.49",
     "es-components-via-theme": "^19.0.45",
     "eslint": "^5.16.0",
     "eslint-loader": "^2.1.2",
@@ -49,8 +52,9 @@
     "react-router-dom": "^5.0.1",
     "styled-components": "^4.3.0",
     "webpack": "^4.33.0",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.6.0"
+    "webpack-dev-server": "^3.7.0"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
