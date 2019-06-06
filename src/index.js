@@ -12,6 +12,6 @@ const ResetApp = () => {
   );
 };
 
-ReactDOM.render(<ResetApp />, document.querySelector('#root'));
+ReactDOM.render(<ResetApp />, document.getElementById('root'));
 
 module.hot.accept();
