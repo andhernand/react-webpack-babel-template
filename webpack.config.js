@@ -14,44 +14,15 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader'
-          },
-          {
-            loader: 'eslint-loader'
-          }
-        ]
-      },
-      {
-        test: /\.(css)$/,
-        use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader'
-          }
-        ]
+        use: [ 'babel-loader', 'eslint-loader' ]
       },
       {
         test: /\.(jpg|jpeg|png|gif|mp3|svg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name]-[hash:9].[ext]'
-            }
-          }
-        ]
+        use: [ 'file-loader' ]
       },
       {
         test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader'
-          }
-        ]
+        use: [ 'html-loader' ]
       }
     ]
   },

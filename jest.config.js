@@ -13,10 +13,7 @@ module.exports = {
   ],
 
   transform: {
-    '^.+\\.(js|jsx)$': 'babel-jest',
-    '^.+\\.css$': '<rootDir>/config/jest/cssTransform.js',
-    '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)':
-      '<rootDir>/config/jest/fileTransform.js'
+    '^.+\\.(js|jsx)$': 'babel-jest'
   },
 
   transformIgnorePatterns: [
