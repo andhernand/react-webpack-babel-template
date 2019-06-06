@@ -1,8 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'normalize.css';
 import App from './components/App';
+import { StyleReset } from 'es-components';
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+const ResetApp = () => {
+  return (
+    <>
+      <StyleReset />
+      <App />
+    </>
+  );
+};
+
+ReactDOM.render(<ResetApp />, document.querySelector('#root'));
 
 module.hot.accept();

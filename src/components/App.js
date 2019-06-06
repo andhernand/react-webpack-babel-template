@@ -1,30 +1,12 @@
 import React from 'react';
-import styled, { css, ThemeProvider } from 'styled-components';
-import theme from 'styled-theming';
-import './App.scss';
-
-const white = '#fff';
-const black = '#000';
-
-const boxStyles = theme('mode', {
-  light: css`
-    background: ${white};
-    color: ${black};
-  `,
-  dark: css`
-    background: ${black};
-    color: ${white};
-  `
-});
-
-const StyledDiv = styled.div`
-  ${boxStyles}
-`;
+import { ThemeProvider } from 'styled-components';
+import viaTheme from 'es-components-via-theme';
+import { Heading } from 'es-components';
 
 const App = () => {
   return (
-    <ThemeProvider theme={{ mode: 'dark' }}>
-      <StyledDiv>React Webpack Babel Template</StyledDiv>
+    <ThemeProvider theme={viaTheme}>
+      <Heading level={1} isKnockoutStyle>React Webpack Babel Template</Heading>
     </ThemeProvider>
   );
 };
