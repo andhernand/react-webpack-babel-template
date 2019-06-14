@@ -17,15 +17,8 @@ module.exports = {
   },
 
   transformIgnorePatterns: [
-    '[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$',
-    '^.+\\.module\\.(css|sass|scss)$'
+    '[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$'
   ],
-
-  modulePaths: [],
-
-  moduleNameMapper: {
-    '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy'
-  },
 
   moduleFileExtensions: ['web.js', 'js', 'json', 'web.jsx', 'jsx', 'node']
 };
