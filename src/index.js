@@ -3,15 +3,17 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import { StyleReset } from 'es-components';
 
-const ResetApp = () => {
+function ResetApp() {
   return (
-    <>
+    <React.Fragment>
       <StyleReset />
       <App />
-    </>
+    </React.Fragment>
   );
-};
+}
 
 ReactDOM.render(<ResetApp />, document.getElementById('root'));
 
-module.hot.accept();
+if (module.hot) {
+  module.hot.accept();
+}

@@ -35,7 +35,7 @@
     "eslint": "^5.16.0",
     "eslint-loader": "^2.1.2",
     "eslint-plugin-import": "^2.17.3",
-    "eslint-plugin-jest": "^22.6.4",
+    "eslint-plugin-jest": "^22.7.1",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
     "file-loader": "^4.0.0",
@@ -44,18 +44,18 @@
     "jest": "^24.8.0",
     "jest-dom": "^3.5.0",
     "react-hot-loader": "^4.11.1",
-    "webpack": "^4.34.0",
+    "webpack": "^4.35.0",
     "webpack-cli": "^3.3.4",
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "core-js": "^3.1.4",
-    "es-components": "^19.0.57",
+    "es-components": "^19.0.58",
     "es-components-via-theme": "^19.0.50",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
-    "styled-components": "^4.3.1"
+    "styled-components": "^4.3.2"
   }
 }
