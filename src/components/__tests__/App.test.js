@@ -4,7 +4,7 @@ import App from '../App';
 
 afterEach(cleanup);
 
-it('App successfully renders', async () => {
+it('App successfully renders', () => {
   const { getByText } = render(<App />);
-  await getByText('React Webpack Babel Template');
+  getByText('React Webpack Babel Template');
 });
