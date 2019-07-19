@@ -1,10 +1,9 @@
 import React from 'react';
-import { render, cleanup } from '@testing-library/react';
+import ReactDOM from 'react-dom';
 import App from '../App';
 
-afterEach(cleanup);
-
-it('App successfully renders', () => {
-  const { getByText } = render(<App />);
-  getByText('React Webpack Babel Template');
+it('renders without crashing', () => {
+  const div = document.createElement('div');
+  ReactDOM.render(<App />, div);
+  ReactDOM.unmountComponentAtNode(div);
 });
