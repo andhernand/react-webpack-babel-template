@@ -7,7 +7,8 @@ module.exports = {
   entry: [path.resolve(__dirname, 'src', 'index.js')],
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: '[name].[hash:9].js'
+    filename: '[name].[hash:9].js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -41,6 +42,7 @@ module.exports = {
   ],
   devServer: {
     contentBase: path.resolve(__dirname, 'build'),
-    hot: true
+    hot: true,
+    historyApiFallback: true
   }
 };
