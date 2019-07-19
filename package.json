@@ -51,8 +51,11 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "core-js": "^3.1.4",
+    "es-components": "^19.0.67",
+    "es-components-via-theme": "^19.0.63",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.1"
+    "react-router-dom": "^5.0.1",
+    "styled-components": "^4.3.2"
   }
 }
