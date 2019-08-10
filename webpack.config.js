@@ -37,7 +37,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       filename: 'index.html',
       template: path.resolve(__dirname, 'src', 'index.html'),
-      favicon: path.resolve(__dirname, 'assets', 'image', 'favicon.png')
+      favicon: path.resolve(__dirname, 'assets', 'image', 'favicon.ico')
     })
   ],
   devServer: {
