@@ -50,7 +50,6 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.4",
     "core-js": "^3.2.0",
     "es-components": "^19.0.76",
     "es-components-via-theme": "^19.0.63",
