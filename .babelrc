@@ -4,7 +4,7 @@
       "@babel/preset-env",
       {
         "useBuiltIns": "usage",
-        "corejs": "3.2.0",
+        "corejs": "3",
         "targets": {
           "browsers": [
             "last 2 chrome versions",
@@ -26,5 +26,10 @@
         "legacy": true
       }
     ]
-  ]
+  ],
+  "env": {
+    "production": {
+      "plugins": ["react-remove-prop-types"]
+    }
+  }
 }
