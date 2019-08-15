@@ -15,15 +15,15 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: [ 'babel-loader', 'eslint-loader' ]
+        use: ['babel-loader', 'eslint-loader']
       },
       {
         test: /\.(jpg|jpeg|png|gif|mp3|svg)$/,
-        use: [ 'file-loader' ]
+        use: ['file-loader']
       },
       {
         test: /\.html$/,
-        use: [ 'html-loader' ]
+        use: ['html-loader']
       }
     ]
   },
@@ -44,5 +44,30 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'build'),
     hot: true,
     historyApiFallback: true
+  },
+  optimization: {
+    runtimeChunk: 'single',
+    splitChunks: {
+      chunks: 'async',
+      minSize: 30000,
+      maxSize: 0,
+      minChunks: 2,
+      maxAsyncRequests: 5,
+      maxInitialRequests: 3,
+      automaticNameDelimiter: '~',
+      automaticNameMaxLength: 30,
+      name: true,
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10
+        },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true
+        }
+      }
+    }
   }
 };

@@ -29,7 +29,18 @@
   ],
   "env": {
     "production": {
-      "plugins": ["react-remove-prop-types"]
+      "plugins": [
+        [
+          "react-remove-prop-types",
+          {
+            "mode": "remove",
+            "removeImport": true,
+            "ignoreFilenames": [
+              "node_modules"
+            ]
+          }
+        ]
+      ]
     }
   }
 }
