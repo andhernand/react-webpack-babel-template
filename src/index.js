@@ -10,5 +10,5 @@ function renderApp() {
 window.onload = renderApp;
 
 if (module.hot) {
-  module.hot.accept('./components/App', renderApp);
+  module.hot.accept('./components/App.js', renderApp);
 }
