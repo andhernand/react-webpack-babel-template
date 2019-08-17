@@ -31,7 +31,7 @@
     "production": {
       "plugins": [
         [
-          "react-remove-prop-types",
+          "transform-react-remove-prop-types",
           {
             "mode": "remove",
             "removeImport": true,
