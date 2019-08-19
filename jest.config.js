@@ -1,6 +1,4 @@
 module.exports = {
-  collectCoverage: true,
-
   collectCoverageFrom: ['src/**/*.{js,jsx}', '!src/**/*.d.ts', '!src/index.js'],
 
   clearMocks: true,
