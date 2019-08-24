@@ -13,9 +13,14 @@
     "plugin:jsx-a11y/recommended",
     "plugin:jest/recommended"
   ],
+  "plugins": [
+    "react-hooks"
+  ],
   "rules": {
     "quotes": [2, "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
-    "semi": [2, "always"]
+    "semi": [2, "always"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   "settings": {
     "react": {
