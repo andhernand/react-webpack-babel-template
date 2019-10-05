@@ -6,8 +6,7 @@ module.exports = {
   testURL: 'http://localhost',
 
   testMatch: [
-    '<rootDir>/src/**/__tests__/**/*.{js,jsx}',
-    '<rootDir>/src/**/*.{spec,test}.{js,jsx}'
+    '<rootDir>/src/**/__tests__/**/*.{spec,test}.{js,jsx}'
   ],
 
   transform: {
