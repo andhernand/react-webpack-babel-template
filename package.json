@@ -1,6 +1,6 @@
 {
   "name": "react-webpack-babel-template",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "react webpack babel learning template",
   "main": "webpack.config.js",
   "private": true,
@@ -28,7 +28,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
-    "@testing-library/jest-dom": "^4.1.2",
+    "@testing-library/jest-dom": "^4.2.0",
     "@testing-library/react": "^9.3.0",
     "@testing-library/user-event": "^7.1.2",
     "babel-eslint": "^10.0.3",
@@ -42,7 +42,7 @@
     "eslint-plugin-jest": "^22.20.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^2.1.2",
+    "eslint-plugin-react-hooks": "^2.2.0",
     "file-loader": "^4.2.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
@@ -50,14 +50,14 @@
     "react-hot-loader": "^4.12.15",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.2"
+    "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
     "axios": "^0.19.0",
-    "core-js": "^3.3.3",
+    "core-js": "^3.3.4",
     "prop-types": "^15.7.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
     "styled-components": "^4.4.0"
   }
