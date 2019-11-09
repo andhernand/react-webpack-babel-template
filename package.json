@@ -1,6 +1,6 @@
 {
   "name": "react-webpack-babel-template",
-  "version": "1.0.15",
+  "version": "1.0.18",
   "description": "react webpack babel learning template",
   "main": "webpack.config.js",
   "private": true,
