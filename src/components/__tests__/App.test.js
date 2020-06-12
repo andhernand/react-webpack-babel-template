@@ -7,6 +7,4 @@ it('renders without crashing', async () => {
   ReactDOM.render(<App />, div);
   const unmounted = ReactDOM.unmountComponentAtNode(div);
   expect(unmounted).toBe(true);
-  // eslint-disable-next-line no-undef
-  await new Promise((resolve) => setTimeout(resolve, 10));
 });
