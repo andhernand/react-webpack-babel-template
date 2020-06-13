@@ -44,6 +44,7 @@ module.exports = {
       favicon: path.resolve(__dirname, 'assets', 'image', 'favicon.ico')
     })
   ],
+  devtool: 'eval-source-map',
   devServer: {
     contentBase: path.resolve(__dirname, 'build'),
     hot: true,
