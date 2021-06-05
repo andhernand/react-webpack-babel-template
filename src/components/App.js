@@ -3,20 +3,10 @@ import React from 'react';
 const App = () => {
   return (
     <>
-      <header role="banner">
-        <h1>Header</h1>
-      </header>
-      <nav role="navigation">
-        <ul>
-          <li>Home</li>
-        </ul>
-      </nav>
-      <main role="main">
-        <p>main.</p>
-      </main>
-      <footer role="contentinfo">
-        <p>footer.</p>
-      </footer>
+      <div role="banner"><h1>This is the header</h1></div>
+      <div role="navigation">This is the nav</div>
+      <div role="main">This is the main</div>
+      <div role="contentinfo">This is the footer</div>
     </>
   );
 };

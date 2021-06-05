@@ -3,6 +3,8 @@ module.exports = {
 
   clearMocks: true,
 
+  testEnvironment: 'jsdom',
+
   testURL: 'http://localhost',
 
   testMatch: [

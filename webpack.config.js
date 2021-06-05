@@ -7,7 +7,7 @@ module.exports = {
   entry: [path.resolve(__dirname, 'src', 'index.js')],
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: '[name].[hash:9].js',
+    filename: '[name].[contenthash].js',
     publicPath: '/'
   },
   module: {
@@ -26,8 +26,8 @@ module.exports = {
         use: ['html-loader']
       },
       {
-        test:/\.css$/,
-        use:['style-loader','css-loader']
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
@@ -37,7 +37,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.HashedModuleIdsPlugin(),
+    new webpack.ids.HashedModuleIdsPlugin(),
     new HtmlWebPackPlugin({
       filename: 'index.html',
       template: path.resolve(__dirname, 'src', 'index.html'),
@@ -49,5 +49,10 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'build'),
     hot: true,
     historyApiFallback: true
+  },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
   }
 };
