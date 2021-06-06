@@ -1,6 +1,6 @@
 {
   "name": "react-webpack-babel-template",
-  "version": "1.4.0",
+  "version": "1.4.2",
   "description": "react webpack babel learning template",
   "main": "webpack.config.js",
   "private": true,
@@ -55,7 +55,6 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "axios": "^0.21.1",
     "core-js": "^3.14.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
