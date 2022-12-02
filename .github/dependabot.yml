@@ -15,12 +15,12 @@ updates:
       prefix: "npm"
       include: "scope"
 
-  - package-ecosystem: "NuGet" # See documentation for possible values
+  - package-ecosystem: "nuget" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
     # Prefix all commit messages with "Composer"
     # include a list of updated dependencies
     commit-message:
-      prefix: "NuGet"
+      prefix: "nuget"
       include: "scope"
