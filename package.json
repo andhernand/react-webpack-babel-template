@@ -20,7 +20,7 @@
   "author": "Andres Hernandez",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.14.3",
+    "@babel/core": "^7.20.12",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/plugin-proposal-decorators": "^7.14.2",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.2",
