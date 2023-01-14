@@ -233,3 +233,4 @@ _Pvt_Extensions
 .vscode/
 coverage/
 node_modules/
+dist/

@@ -1,17 +1,14 @@
-import 'core-js/stable';
-import 'regenerator-runtime/runtime';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import * as ReactDOMClient from 'react-dom/client';
 import App from './components/App';
 import 'normalize.css';
+import './style.css';
 
-function renderApp() {
-  const content = document.getElementById('root');
-  ReactDOM.render(<App />, content);
-}
+const rootElement = document.getElementById('app');
+const root = ReactDOMClient.createRoot(rootElement);
 
-window.onload = renderApp;
-
-if (module.hot) {
-  module.hot.accept('./components/App.js', renderApp);
-}
+root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+);
