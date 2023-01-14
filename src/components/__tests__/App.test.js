@@ -1,10 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import * as ReactDOMClient from 'react-dom/client';
 import App from '../App';
 
-test('renders without crashing', async () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  const unmounted = ReactDOM.unmountComponentAtNode(div);
-  expect(unmounted).toBe(true);
+const rootElement = document.createElement('div');
+const root = ReactDOMClient.createRoot(rootElement);
+
+test('App renders without crashing', () => {
+  root.render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>,
+  );
+
+  root.unmount();
 });

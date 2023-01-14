@@ -5,7 +5,9 @@ module.exports = {
 
   testEnvironment: 'jsdom',
 
-  testURL: 'http://localhost',
+  testEnvironmentOptions: {
+    'url': 'http://localhost'
+  },
 
   testMatch: [
     '<rootDir>/src/**/__tests__/**/*.{spec,test}.{js,jsx}'
