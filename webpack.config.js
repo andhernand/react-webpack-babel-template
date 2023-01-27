@@ -1,5 +1,5 @@
 const path = require("path");
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -14,7 +14,7 @@ module.exports = {
       {
         test: /\.?js$/,
         exclude: /node_modules/,
-        use: ["babel-loader"]
+        use: ["babel-loader"],
       },
       {
         test: /\.css$/,
@@ -29,7 +29,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./src/index.html", // base html
-      favicon: path.resolve(__dirname, 'assets', 'images', 'favicon.ico'),
+      favicon: path.resolve(__dirname, "assets", "images", "favicon.ico"),
     }),
   ],
   devtool: "eval-source-map",
