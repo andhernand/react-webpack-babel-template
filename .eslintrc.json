@@ -38,7 +38,8 @@
       {
         "avoidEscape": true
       }
-    ]
+    ],
+    "linebreak-style": 0
   },
   "settings": {
     "react": {
