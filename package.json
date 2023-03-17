@@ -1,6 +1,6 @@
 {
   "name": "react-webpack-project",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "React Webpack",
   "private": true,
   "scripts": {
@@ -16,8 +16,8 @@
   "author": "Andres Hernandez",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.21.0",
-    "@babel/eslint-parser": "^7.19.1",
+    "@babel/core": "^7.21.3",
+    "@babel/eslint-parser": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@testing-library/jest-dom": "^5.16.5",
@@ -39,10 +39,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0",
-    "style-loader": "^3.3.1",
-    "styled-components": "^5.3.8",
-    "webpack": "^5.76.1",
+    "style-loader": "^3.3.2",
+    "styled-components": "^5.3.9",
+    "webpack": "^5.76.2",
     "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.11.1"
+    "webpack-dev-server": "^4.12.0"
   }
 }
