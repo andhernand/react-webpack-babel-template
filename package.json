@@ -1,6 +1,6 @@
 {
   "name": "react-webpack-project",
-  "version": "2.0.10",
+  "version": "2.1.0",
   "description": "React Webpack",
   "private": true,
   "scripts": {
@@ -11,7 +11,9 @@
   },
   "keywords": [
     "react",
-    "webpack"
+    "webpack",
+    "jest",
+    "babel"
   ],
   "author": "Andres Hernandez",
   "license": "MIT",
