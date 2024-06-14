@@ -1,5 +1,16 @@
 version: 2
 updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: 'weekly'
+      day: 'friday'
+      time: '01:00'
+      timezone: 'America/Denver'
+    commit-message:
+      prefix: "GitHub Actions"
+      include: "scope"
+
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
